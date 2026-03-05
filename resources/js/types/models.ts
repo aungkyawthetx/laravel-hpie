@@ -29,6 +29,7 @@ export interface Lesson {
     slug: string;
     title: string;
     description: string | null;
+    subject: string | null;
     thumbnail_path: string | null;
     video_type: 'youtube' | 'vimeo' | 'upload';
     video_url: string | null;
@@ -39,6 +40,7 @@ export interface Lesson {
     activity_content: string | null;
     is_published: boolean;
     sort_order: number;
+    view_count: number;
     translations?: LessonTranslation[];
     created_at: string;
     updated_at: string;

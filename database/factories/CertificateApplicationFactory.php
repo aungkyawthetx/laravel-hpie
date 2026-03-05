@@ -14,7 +14,7 @@ class CertificateApplicationFactory extends Factory
             'name' => fake()->name(),
             'email' => fake()->safeEmail(),
             'phone' => fake()->phoneNumber(),
-            'institution' => fake()->company() . ' University',
+            'institution' => fake()->company().' University',
             'program' => fake()->randomElement(['Education', 'Public Health', 'Social Work', 'Nursing']),
             'statement' => fake()->paragraphs(2, true),
             'status' => fake()->randomElement(['pending', 'reviewing', 'approved', 'denied']),

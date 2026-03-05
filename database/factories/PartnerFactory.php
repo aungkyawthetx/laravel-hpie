@@ -15,7 +15,7 @@ class PartnerFactory extends Factory
 
         return [
             'name' => $name,
-            'slug' => Str::slug($name) . '-' . fake()->unique()->randomNumber(4),
+            'slug' => Str::slug($name).'-'.fake()->unique()->randomNumber(4),
             'description' => fake()->paragraph(),
             'contact_email' => fake()->companyEmail(),
             'contact_phone' => fake()->phoneNumber(),

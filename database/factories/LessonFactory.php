@@ -14,7 +14,7 @@ class LessonFactory extends Factory
         $title = fake()->sentence(4);
 
         return [
-            'slug' => Str::slug($title) . '-' . fake()->unique()->randomNumber(4),
+            'slug' => Str::slug($title).'-'.fake()->unique()->randomNumber(4),
             'title' => $title,
             'description' => fake()->paragraph(3),
             'video_type' => 'youtube',
