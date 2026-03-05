@@ -14,6 +14,7 @@ class Lesson extends Model
         'slug',
         'title',
         'description',
+        'subject',
         'thumbnail_path',
         'video_type',
         'video_url',
@@ -24,6 +25,7 @@ class Lesson extends Model
         'activity_content',
         'is_published',
         'sort_order',
+        'view_count',
     ];
 
     protected function casts(): array
