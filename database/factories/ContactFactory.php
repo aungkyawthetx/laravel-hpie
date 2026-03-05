@@ -14,7 +14,7 @@ class ContactFactory extends Factory
             'name' => fake()->name(),
             'title' => fake()->jobTitle(),
             'bio' => fake()->paragraph(2),
-            'calendly_url' => 'https://calendly.com/' . fake()->userName(),
+            'calendly_url' => 'https://calendly.com/'.fake()->userName(),
             'email' => fake()->safeEmail(),
             'is_active' => true,
             'sort_order' => fake()->numberBetween(0, 10),

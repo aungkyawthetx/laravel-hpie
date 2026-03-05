@@ -35,7 +35,7 @@ class PartnerController extends Controller
             'logo' => 'nullable|image|max:2048',
         ]);
 
-        $data['slug'] = Str::slug($data['name']) . '-' . Str::random(4);
+        $data['slug'] = Str::slug($data['name']).'-'.Str::random(4);
 
         if ($request->hasFile('logo')) {
             $data['logo_path'] = $request->file('logo')->store('images/partners', 'public');
