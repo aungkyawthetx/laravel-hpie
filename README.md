@@ -2,10 +2,6 @@
 
 Laravel + Inertia.js application for public learning content and admin content management.
 
-## Documentation
-
-- [Technical Documentation](docs/TECHNICAL_DOCUMENTATION.md)
-- [User Manual](docs/USER_MANUAL.md)
 
 ## Quick Start
 
